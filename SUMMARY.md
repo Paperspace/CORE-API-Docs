@@ -27,9 +27,9 @@
   * [List](api-documentation/templates/list.md)
 * [Networks](api-documentation/networks/README.md)
   * [List](api-documentation/networks/list.md)
-* [Users](api-documentation/users/README.md)
-  * [List](api-documentation/users/list.md)
-  * [logout](api-documentation/users/logout.md)
+* [Users](api-documentation/users-2/README.md)
+  * [List](api-documentation/users-2/list.md)
+  * [logout](api-documentation/users-2/logout.md)
 
 ---
 
