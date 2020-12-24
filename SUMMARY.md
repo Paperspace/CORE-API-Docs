@@ -36,5 +36,3 @@
 * [Resource Delegations](resourcedelegations.md)
 * [Scripts](scripts.md)
 
-## Users <a id="users-1"></a>
-
