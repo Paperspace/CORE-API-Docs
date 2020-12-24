@@ -21,7 +21,7 @@ We'll be illustrating all examples using [ES5](http://speakingjs.com/es5/ch01.ht
 First, install the `paperspace-node` package in your project directory using:
 
 ```text
-$ npm install paperspace-node
+npm install paperspace-node
 ```
 
 Within your node.js app you can import the package with:
