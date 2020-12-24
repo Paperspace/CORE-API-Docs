@@ -8,13 +8,13 @@ Welcome to the **Paperspace CORE API** documentation. CORE provides a RESTful AP
 
 You can interact with CORE API in two ways: by using an HTTP client of your choice and the Paperspace API HTTP endpoints or programmatically from within a Javascript Node.js application.
 
-## Other clients <a id="other-clients"></a>
+#### Other clients
 
 If you've created an API client in a language other than JavaScript, please let us know at [support@paperspace.com](mailto:support@paperspace.com) and we will link to it here.
 
 ## Sample Apps <a id="sample-apps"></a>
 
-See the directory [samples](https://github.com/Paperspace/paperspace-node/tree/master/samples) for a few simple samples of using the node API, and the CLI in a bash script. Note: the [jq](https://stedolan.github.io/jq/) tool is used in the bash sample for parsing JSON data.
+See the directory [samples](https://github.com/Paperspace/paperspace-node/tree/master/samples) for a few simple samples of using the node API. Note: the [jq](https://stedolan.github.io/jq/) tool is used in the bash sample for parsing JSON data.
 
 ## Contributing <a id="contributing"></a>
 
