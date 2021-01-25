@@ -18,6 +18,7 @@ x-api-key: 1ba4f98e7c0...
 paperspace.machines.setAccessForUser({
   machineId: 'ps123abc',
   userId: 'u123abc,
+  enableAccess: true,
 }, function(err, res) {
   // handle error or result
 });
@@ -31,7 +32,5 @@ paperspace.machines.setAccessForUser({
 | :--- | :--- | :--- |
 | `machineId` | string | Id of the machine to enable access |
 | `userId` | string | Id of the user to enable machine access for |
-| `enab`**l**`eAccess-` | boolean | releases any assigned public ip address for the machine; defaults to false |
-
-
+| `enableAccess` | boolean | When "true", the person is added as an accessor to the machine; when "false" the person is removed |
 
