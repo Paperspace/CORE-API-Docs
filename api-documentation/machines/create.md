@@ -64,7 +64,7 @@ paperspace.machines.create({
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Name of the region: either &apos;East Coast (NY2)&apos;, &apos;West Coast
-        (CA1)&apos;, or &apos;Europe (AMS1)&apos;</td>
+        (CA1)&apos;, or &apos;Europe (AMS1)&apos;.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>machineType</code>
@@ -89,28 +89,28 @@ paperspace.machines.create({
       </td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Storage size for the machine in GB</td>
+      <td style="text-align:left">Storage size for the machine in GB.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>billingType</code>
       </td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Either &apos;monthly&apos; or &apos;hourly&apos; billing</td>
+      <td style="text-align:left">Either &apos;monthly&apos; or &apos;hourly&apos; billing.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>machineName</code>
       </td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">A memorable name for this machine</td>
+      <td style="text-align:left">A memorable name for this machine.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>templateId</code>
       </td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Template id of the template to use for creating this machine</td>
+      <td style="text-align:left">Template ID of the template to use for creating this machine.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>assignPublicIp</code>
@@ -119,8 +119,7 @@ paperspace.machines.create({
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">Assign a new public ip address on machine creation. Cannot be used with
-        dynamicPublicIp.</td>
+      <td style="text-align:left">Assign a new public ip address on machine creation. Cannot be used with <code>dynamicPublicIp</code>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>dynamicPublicIp</code>
@@ -129,8 +128,15 @@ paperspace.machines.create({
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">Assigns a new public ip address on machine start and releases it from
-        the account on machine stop. Cannot be used with assignPublicIp.</td>
+      <td style="text-align:left">Assigns a new public IP address on machine start and releases it from
+        the account on machine stop. Cannot be used with <code>assignPublicIp</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>startOnCreate</code>
+      </td>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:left">&lt;optional&gt;</td>
+      <td style="text-align:left">Start the VM immediately after creation. Defaults to <code>true</code>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>networkId</code>
@@ -139,16 +145,17 @@ paperspace.machines.create({
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">If creating on a specific network, specify its id</td>
+      <td style="text-align:left">If creating on a specific network, specify its ID</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>teamId</code>
+      <td style="text-align:left"><code>scriptId</code>
       </td>
       <td style="text-align:left">string</td>
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">If creating the machine for a team, specify the team id</td>
+      <td style="text-align:left">The script ID of a script to be run on startup. See the <a href="https://paperspace.github.io/paperspace-node/scripts.md">Script Guide</a> for
+        more info on using scripts.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>userId</code>
@@ -158,7 +165,7 @@ paperspace.machines.create({
         <br />
       </td>
       <td style="text-align:left">If assigning to an existing user other than yourself, specify the user
-        id (mutually exclusive with email, password, firstName, lastName)</td>
+        ID (mutually exclusive with <code>email</code>, <code>password</code>, <code>firstName</code>, <code>lastName</code>).</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>email</code>
@@ -168,7 +175,7 @@ paperspace.machines.create({
         <br />
       </td>
       <td style="text-align:left">If creating a new user for this machine, specify their email address (mutually
-        exclusive with userId)</td>
+        exclusive with <code>userId</code>).</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>password</code>
@@ -177,8 +184,7 @@ paperspace.machines.create({
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">If creating a new user, specify their password (mutually exclusive with
-        userId)</td>
+      <td style="text-align:left">If creating a new user, specify their password (mutually exclusive with <code>userId</code>).</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>firstName</code>
@@ -187,8 +193,7 @@ paperspace.machines.create({
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">If creating a new user, specify their first name (mutually exclusive with
-        userId)</td>
+      <td style="text-align:left">If creating a new user, specify their first name (mutually exclusive with <code>userId</code>).</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>lastName</code>
@@ -197,8 +202,7 @@ paperspace.machines.create({
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">If creating a new user, specify their last name (mutually exclusive with
-        userId)</td>
+      <td style="text-align:left">If creating a new user, specify their last name (mutually exclusive with <code>userId</code>).</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>notificationEmail</code>
@@ -207,17 +211,29 @@ paperspace.machines.create({
       <td style="text-align:left">&lt;optional&gt;
         <br />
       </td>
-      <td style="text-align:left">Send a notification to this email address when complete</td>
+      <td style="text-align:left">Send a notification to this email address when complete.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>scriptId</code>
+      <td style="text-align:left"><code>takeInitialSnapshot</code>
+      </td>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:left">&lt;optional&gt;</td>
+      <td style="text-align:left">Take a snapshot of the VM at first boot.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>markSnapshotAsRestorePoint</code>
+      </td>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:left">&lt;optional&gt;</td>
+      <td style="text-align:left">Use initial snapshot as a restore point for the VM. If this is true, <code>takeInitialSnapshot</code> must
+        be true and <code>restorePointFrequency</code> must be specified.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>restorePointFrequency</code>
       </td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left">&lt;optional&gt;
-        <br />
-      </td>
-      <td style="text-align:left">The script id of a script to be run on startup. See the <a href="https://paperspace.github.io/paperspace-node/scripts.md">Script Guide</a> for
-        more info on using scripts.</td>
+      <td style="text-align:left">&lt;optional&gt;</td>
+      <td style="text-align:left">How often the VM&apos;s restore point should be used. Valid options: <code>shutdown</code>.</td>
     </tr>
   </tbody>
 </table>
