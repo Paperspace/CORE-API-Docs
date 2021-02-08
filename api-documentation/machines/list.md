@@ -2,6 +2,8 @@
 
 List information about all machines available to either the current authenticated user or the team, if the user belongs to a team. The list method takes an optional first argument to limit the returned machine objects.
 
+This API supports pagination using `limit` and `skip`. The default limit is 1000 items. To retrieve more than 1000 items, set your `skip` parameter to a multiple of 1000. For example, to retrieve the 3rd page of 1000 items, you would pass `{ limit: 1000, skip: 2000 }`.
+
 **Examples**
 
 {% tabs %}
@@ -28,6 +30,8 @@ paperspace.machines.list(function(err, res) {
 
 | Name | Type | Attributes | Description |
 | :--- | :--- | :--- | :--- |
+| `limit` | number | &lt;optional&gt; | Number of items to return. Defaults to 1000. |
+| `skip` | number | &lt;optional&gt; | Number of items in the list to skip. |
 | `machineId` | string | &lt;optional&gt;  | Optional machine id to match on. Note: must be specified as "machineId", not "id". |
 | `name` | string | &lt;optional&gt;  | Optional name to match on |
 | `os` | string | &lt;optional&gt;  | Optional os to match on |
