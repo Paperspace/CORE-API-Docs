@@ -1,18 +1,18 @@
 # Introduction
 
 {% hint style="info" %}
-Note: These docs cover the CORE API. To learn how to use CORE from the web console, view the [Help Center](https://support.paperspace.com/hc/en-us). 
+Note: These docs cover the CORE API. To learn how to use CORE from the web console, view the [Help Center](https://support.paperspace.com/hc/en-us).
 {% endhint %}
 
 ![](.gitbook/assets/paperspace-core-api2.jpg)
 
-Welcome to the **Paperspace CORE API** documentation. CORE provides a RESTful API for programmatically managing your compute resources. It is currently available through the use of standard HTTP requests as well as a JavaScript client for Node.js. We plan to offer other languages and integrations in the future. 
+Welcome to the **Paperspace CORE API** documentation. CORE provides a RESTful API for programmatically managing your compute resources. It is currently available through the use of standard HTTP requests as well as a JavaScript client for Node.js. We plan to offer other languages and integrations in the future.
 
 ## Usage <a id="usage"></a>
 
 You can interact with CORE API in two ways: by using an HTTP client of your choice and the Paperspace API HTTP endpoints or programmatically from within a Javascript Node.js application.
 
-#### Other clients
+### Other clients
 
 If you've created an API client in a language other than JavaScript, please let us know at [support@paperspace.com](mailto:support@paperspace.com) and we will link to it here.
 
@@ -42,7 +42,7 @@ Think you've discovered a security flaw or exploit? Please contact us directly a
 
 ## License <a id="license"></a>
 
-This project is open-source, under the ISC license. 
+This project is open-source, under the ISC license.
 
 > Copyright \(c\) 2021, Paperspace support@paperspace.com&gt;
 >

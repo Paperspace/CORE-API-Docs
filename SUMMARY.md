@@ -34,5 +34,6 @@
 ---
 
 * [Resource Delegations](resourcedelegations.md)
-* [Scripts](scripts.md)
+* [Scripts](scripts/README.md)
+  * [Script Guide](scripts/script-guide.md)
 
