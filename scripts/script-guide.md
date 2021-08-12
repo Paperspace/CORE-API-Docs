@@ -1,6 +1,8 @@
-# Script Guide
+---
+description: A brief guide on the use of Paperspace startup scripts
+---
 
-A brief guide on the use of Paperspace startup scripts
+# Script Guide
 
 ## Overview
 
