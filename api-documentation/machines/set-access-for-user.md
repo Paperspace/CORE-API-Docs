@@ -7,7 +7,7 @@
 ```text
 # HTTP request:
 https://api.paperspace.io
-GET /machines/:machineId/setMachineAccessPublic?userId=u123abc
+GET /machines/:machineId/setMachineAccess?userId=u123abc
 x-api-key: 1ba4f98e7c0...
 # Returns 200 on success
 ```
